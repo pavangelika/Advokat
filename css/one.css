@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Fira+Sans;
+    background-color: #f1f1f1;
+}
+
+
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 {
+   /*border: solid 1px #aaa;
+    /* margin: 8px;
+    padding: 15px; 
+    text-align: center;
+    background-color: white;*/
+}
+
+/*.carousel-inner{
+    margin-bottom: 8px;
+    margin-top: 8px;
+}*/
+
+.list{
+    text-align: left;
+}
+
+div#background{
+    background-image: url(../pic/home-slider-image-1.webp);
+    background-size: cover;
+    padding-bottom: 18vw;
+    color: #adb5bd;
+    font-family: Ubuntu Condensed, sans-serif;
+
+}
+
+div#text{
+    margin: 2vw;
+}
+
+
+    
