@@ -10,7 +10,7 @@
     <meta name="generator" content="GitLab Pages">
     <meta property="og:title" content="Адвокаты и юристы Сургута: Ермолаев В.А.">
     <meta property="og:description" content="Нарушают права? Звоните! Адвокат Ермолаев В.А. - член сургутской коллегии адвокатов. Работаю с 2008 г. Помогу защиить ваши права. Честные цены. В срок по договору. Защита в суде.">
-    <meta property="og:image" content="/pic/promo2.webp">
+    <meta property="og:image" content="/pic/promo.webp">
     <meta property="og:image:width" content="1080">
     <meta property="og:image:height" content="561">
     <meta property="og:url" content="http://advokat86ermolaev.ru/">
@@ -181,9 +181,9 @@
 
 
 <!-- Кнопка-триггер модального окна -->
-<button type="button" id="btn" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    <p class="user-select-none fs-3"> 
-        Получить консультацию </p>
+<button type="button" id="btn" class="btn btn-lg">
+  <a href="#consult" class="text-decoration-none text-white"><p class="user-select-none fs-3"> 
+    Получить консультацию </p></a>
  </button>
 <!-- СКРОЛЛ вниз -->
 <br>
@@ -204,13 +204,46 @@
 
               <div class="input-group position-relative">
                 <div class="input-group-text"> <img src="pic/smm/chat-left-text-fill.svg" width="20vw"></div>
-                <input type="text" class="form-control" id="disabledTextInput">
+                <input class="form-control" type="text" placeholder="Написать отзыв..." aria-label="Пример отключенного входа" disabled>
 
               <!-- Кнопка-триггер модального окна -->
               <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" 
               data-bs-target="#exampleModal"><img src="pic/smm/navigation.svg"></button>
              <!--написать отзыв-->
+             <div class="modal fade text-start" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Новый отзыв</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">                        
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Имя:" required>
+                      </div>
+                      <div class="mb-3">                        
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Фамилия:" required>
+                      </div>
+                      <div class="mb-3">                        
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="name@example.ru" required>
+                      </div>
+                      <div class="mb-3">                        
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="+7(xxx)xxx-xx-xx" required>
+                      </div>
+                      <div class="mb-3">
+                        <textarea class="form-control" id="validationTextarea" placeholder="Сообщение" required></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button class="btn btn-primary" type="submit">Отправить </button>
 
+                  </div>
+                </div>
+              </div>
+            </div>
 
             </div>
           </form>          
@@ -275,7 +308,7 @@
           Сургутская специализированная коллегия адвокатов ХМАО-Югра, г. Сургут, ул. Маяковского, д. 31, оф. 909. <br>
             Номер в реестре - 86/793. Номер удостоверения - 828. <br> <br>     
     </div>
-    <div class="col-md-8 mt-4 px-5 mx-auto">
+    <div class="col-md-8 mt-4 px-4 mx-auto" id="consult">
       <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
       </svg>
@@ -317,7 +350,7 @@
           </div>
         </div>
         <div class="col-12 mb-5">
-          <button id="btn" class="btn btn-lg" type="submit" >Отправить </button>
+          <button id="btn" class="btn btn-lg" type="submit">Отправить </button>
 
         </div>
       </form>
@@ -326,66 +359,13 @@
 </div>
 </div>
 <!--TRASH-->
-<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Верхнее всплывающее окно">
-  Всплывающее окно вверху
-</button>
-<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Правое всплывающее окно">
-  Всплывающее окно справа
-</button>
-<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Нижнее всплывающее окно">
-  Всплывающее окно внизу
-</button>
-<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Левое всплывающее окно">
-  Всплывающее окно слева
-</button>
-<button type="button" class="btn btn-primary" id="liveToastBtn">Показать лайв тосты</button>
-
-<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <img src="..." class="rounded me-2" alt="...">
-      <strong class="me-auto">Bootstrap</strong>
-      <small>11 мин назад</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
-    </div>
-    <div class="toast-body">
-      Привет, мир! Это тост-сообщение.
-    </div>
-  </div>
-</div>
-
-<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-  Ссылка с помощью атрибута href
-</a>
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-  Кнопка с атрибутом data-bs-target
-</button>
-
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Вне холста</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-      Какой-то текст в качестве заполнителя. В реальной жизни у вас могут быть элементы, которые Вы выбрали. Нравится, текст, изображения, списки и т. д.
-    </div>
-    <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-        Кнопка раскрывающегося списка
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" href="#">Действие</a></li>
-        <li><a class="dropdown-item" href="#">Другое действие</a></li>
-        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+<!--настроить отправку формы-->
+<!--сразу вниз-->
 <!--TRASH-->
 
 </div>
 
-<script src="js\bootstrap.bundle.min.js"></script>   
+<script src="js/bootstrap.bundle.min.js"> </script>
+
 </body>
 </html>
