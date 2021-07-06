@@ -36,44 +36,45 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 </head>
 <body>
     <div class="container-fluid">
 <!-- шапка-->
     <div class="row" id="background">
-        <div class="col-12 col-md-8" id="shapka">
-            <div class="col text-white d-flex justify-content-center align-items-end mt-4" > 
-                <p class="user-select-none fs-2 text-uppercase"> Адвокат Ермолаев Вячеслав Анатольевич </p> </div>
-            <div class="col d-flex justify-content-center align-items-center mb-4">
-                 <p class="user-select-none"> СУРГУТСКАЯ КОЛЛЕГИЯ АДВОКАТОВ </p></div>
+        <div class="col-12 col-md-8">
+            <div class="col d-flex justify-content-center align-items-end mt-2 user-select-none" >                 
+                <p class="user-select-none text-uppercase text-center">  СУРГУТСКАЯ КОЛЛЕГИЯ АДВОКАТОВ <br/> 
+                    <span style="font-size: 2.1em; color: white;"> Ермолаев Вячеслав Анатольевич  </span>           
+                </p>
+                
+            </div>            
         </div>
-        <div class="col d-flex justify-content-center align-items-center" > 
-            <a data-testid="linkElement" href="tel:89226530917" class="text-decoration-none text-white"><span class="_1JoT_">
-            
+        <div class="col text-white d-flex justify-content-center align-items-end mt-2" > 
+            <a href="tel:89226530917" data-testid="linkElement" class="text-decoration-none text-white">
+                <span class="_1JoT_">
                 <p class="user-select-none fs-1 "> 
                     + 7(922)653-09-17</p>
-        </span></a>
+                </span>
+            </a>
         </div>
-
-<!--промо-текст-->
+<hr>
+<!--цитата-->
 <div class="row">
     <div class="col user-select-none fs-1 text-center" id="citata">
-        <br><br>
         <p>"Незнание закона не освобождает от ответственности. <br>
                             А вот знание часто освобождает." </p>
-        <span style="font-size: 0.6rem;">СТАНИСЛАВ ЕЖИ ЛЕЦ</span>
-        </div>
+        <span style="font-size: 0.8rem;">СТАНИСЛАВ ЕЖИ ЛЕЦ</span>
+    </div>
 </div>
 </div>
 
-
+<!--блок об адвокате-->
 <div class="row" id="text">
-    <div class="col pt-4 user-select-none">
-        <p class="fs-6"> 
-            АДВОКАТ
-        </p>
-        <p class="fs-5">
+    <div class="col pt-3 user-select-none">
+        <p class="fs-5 text-uppercase"> 
+            АДВОКАТ <br/>
             Ермолаев Вячеслав Анатольевич
         </p>
         <p class="text-start">
@@ -97,207 +98,147 @@
         </p>
     </div>
 </div>
-
-<div class="row" id="text">
-        <div class="col col-md-8">
-            <div class="row">
-                <div class="col">
-                    <p class="fs-3 user-select-none text-start">
-                        Весь спектр юридических услуг:
-                    </p>
-                </div>
-            </div>
-          <div class="row">
-            <div class="col col-md-6 user-select-none text-start">
-                <li>Гражданские дела</li> <br>
-                <li>Брако-разводные процессы</li>
-                Помощь при установлении отцовста, назначении алиментов в браке или после развода, помощь при разделе имущества
-                <br> <br>
-                <li>Иски, жалобы, заявления в правоохранительные органы</li>
-            </div>
-            <div class="col col-md-6 pt-4 user-select-none text-start">
-                <li>Уголовные дела</li>
-                Защита на предварительном следствии, дознании, суде, посещение мест лишения свободы, выезд для оказания юридической помощи
-                <br><br> <li>Административные дела</li>
-                Помощь при лишении права управления транспортными средствами, помощь при ДТП, обжалование решений и постановлений судов, участие в мировом, федеральном судах
-       
-            </div>
-          </div>
-        </div>
-        <div class="col d-flex justify-content-center align-items-center">
-            <div class="card bg-dark bg-gradient text-white" style="width:19rem;" >
-                <div class="card-body" >
-                    <p class="card-title user-select-none fs-4">  Обратитесь <br> </p>
-                    <p class="card-title user-select-none">  за консультацией  </p>  
-                    <br>
-
-                        <!-- Кнопка-триггер модального окна -->
-<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    <p class="user-select-none fs-3"> 
-        Получить консультацию  </p>
- </button>
-<!-- Модальное окно -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"> </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-        </div>
-        <div class="modal-body">
-            
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftu_lP4CJJPGlXGkSoo3LkxP7v7LKq9C2dWR9x8W7UToGoag/viewform?embedded=true" width="330vw" height="900vw" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-        
+ <!--кодексы-->
+<div class="row mt-5" id="textFon">
+             <div class="col-12 col-md-3 text-center ">  
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg>              
+                <p class="user-select-none fs-5 mt-3">  Уголовные дела </p>
+             </div>   
+             <div class="col-12 col-md-3 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg>     
+                <p class="user-select-none fs-5 mt-3"> Гражданские дела </p>
+             </div>
+             <div class="col-12 col-md-3 text-center">       
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg>              
+                <p class="user-select-none fs-5 mt-3"> Административные дела </p>
+             </div>  
+             <div class="col-12 col-md-3 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg>     
+                <p class="user-select-none fs-5 mt-3"> Иски, жалобы, заявления в правоохранительные органы</p>
+             </div>
     </div>
-      </div>
-    </div>
-  </div>
-                    </span></a>                    
-                          <p class="card-text user-select-none"> <br>
-                            Офис-центр "Маяк" <br>
-                            ул. Маяковского 31, оф. 909 </p>
-                        </div>
-                    </div>
-        </div>
-      </div>
+    
 
 <!--получи консультацию-->
-<div class="row" id="text">
-    <div class="col col-md-4 d-flex justify-content-center align-items-center" id="shapka"> 
-        <img src="pic/syd-molot.webp" width="300vw"></div>
-    <div class="col col" id="shapka"> 
+<div class="row" id="background2">
+    <div class="col col"> 
         <p class="user-select-none fs-3"> <br>КАКИХ РЕЗУЛЬТАТОВ МОЖНО ДОБИТЬСЯ?</p> 
-        <p class="user-select-none text-start">
-            Если вы столкнулись с проблемой в рамках уголовного права - обращайтесь!
-            Я готов подключиться к процессу на любой стадии и быть с вами до полного его завершения,
-             вплоть до обжалования в Верховном суде.   </p>     
-<p class="user-select-none text-start">  + Прекращение уголовного дела </p>
-<p class="user-select-none text-start"> + Переквалификация статьи на более мягкую </p>
-<p class="user-select-none text-start">+ Изменение меры пресечения</p>
-<p class="user-select-none text-start">+ Изменение статуса участника уголовного производства</p>
-<p class="user-select-none text-start">+ Оправдательный приговор в суде</p>
+        <p class="user-select-none">
+            Если вы столкнулись с проблемой - обращайтесь! <br>
+            Я готов подключиться к процессу на любой стадии и быть с вами до полного его завершения, вплоть до обжалования в суде.   </p>  
+    </div>
+    <div class="row mt-5 ms-1">
+             <div class="col-12 col-md-2  text-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                    <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                    <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                <p class="user-select-none fs-5 mt-3">  Прекращение дела </p>
+             </div>   
+             <div class="col-12 col-md-3   text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+                    <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+                  </svg>
+                <p class="user-select-none fs-5 mt-3"> Переквалификация статьи на более мягкую </p>
+             </div>
+             <div class="col-12 col-md-2 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-signpost-2" viewBox="0 0 16 16">
+                    <path d="M7 1.414V2H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h5v1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H7v5h2v-5h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H9V6h4.5a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.3 2.4a1 1 0 0 0-.8-.4H9v-.586a1 1 0 0 0-2 0zM13.5 3l.75 1-.75 1H2V3h11.5zm.5 5v2H2.5l-.75-1 .75-1H14z"/>
+                  </svg>
+                <p class="user-select-none fs-5 mt-3"> Изменение меры пресечения</p>
+             </div>   
+             <div class="col-12 col-md-3 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
+                    <path d="M3 2v4.586l7 7L14.586 9l-7-7H3zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2z"/>
+                    <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1v5.086z"/>
+                  </svg>
+                <p class="user-select-none fs-5 mt-3"> Изменение статуса участника судебного производства</p>
+             </div>
+             <div class="col-12 col-md-2 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                    <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/>
+                  </svg>
+                <p class="user-select-none fs-5 mt-3"> Оправдательный приговор в суде</p>
+             </div>
+
+    <div class="row">
+        <div class="col col d-flex justify-content-center align-items-center mt-5 ms-3 mb-5">
+
 <br>
+
 
 <!-- Кнопка-триггер модального окна -->
-<button type="button" class="btn btn-warning btn-lg text-black" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" id="btn" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
     <p class="user-select-none fs-3"> 
-        Получить консультацию  </p>
+        Получить консультацию </p>
  </button>
-<!-- Модальное окно -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"> </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-        </div>
-        <div class="modal-body">
-            
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftu_lP4CJJPGlXGkSoo3LkxP7v7LKq9C2dWR9x8W7UToGoag/viewform?embedded=true" width="330vw" height="900vw" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-        
-    </div>
-      </div>
-    </div>
-  </div>
-
-
+<!-- СКРОЛЛ вниз -->
 <br>
 <br>
 <br>
-
     </div>
+    </div>
+</div>
 </div>
 <!--отзывы-->
         <div class="row" id="text" >
             <div class="col">
-                <p class="user-select-none fs-4">Отзывы об адвокате</p>
+                <p class="user-select-none fs-4 mt-4">Отзывы об адвокате</p>
 
 <div class="row">
     <div class="col row-cols-md-auto">
         <form class="row row-cols-lg-auto g-3 align-items-center needs-validation" novalidate>
+
               <div class="input-group position-relative">
                 <div class="input-group-text"> <img src="pic/smm/chat-left-text-fill.svg" width="20vw"></div>
-                <input type="text" class="form-control" id="validationTooltip01" value="" required>
-                <div class="valid-tooltip">
-                  Все хорошо!
-                </div>
+                <input type="text" class="form-control" id="disabledTextInput">
+
               <!-- Кнопка-триггер модального окна -->
               <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" 
               data-bs-target="#exampleModal"><img src="pic/smm/navigation.svg"></button>
-              <!-- Модальное окно -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Заполните форму</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-        </div>
-        <div class="modal-body">
-          <!--форма-->
-          <form>
-              <div class="row"> 
-            <div class="col">
-              <label for="validationDefault01" class="form-label"> </label>
-              <input type="text" class="form-control" id="validationDefault01" value="" placeholder="Имя" required>
-            </div>
-            <div class="col">
-              <label for="validationDefault02" class="form-label"> </label>
-              <input type="text" class="form-control" id="validationDefault02" value="" placeholder="Фамилия" required>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-              <label for="validationDefaultUsername" class="form-label"></label>
-              <div class="input-group">
-                <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" placeholder="e-mail" required>
-              </div>
-            </div>            
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                <label class="form-check-label" for="invalidCheck2">
-                  Согласие на обработку данных
-                </label>
-              </div>
-            </div>
-        </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Отправить</button>
-        </div>
-      </div>
-    </div>
-  </div>
+             <!--написать отзыв-->
+
+
             </div>
           </form>          
     </div>
     </div>
 <!--отзывы-->
-<div class="row">
+<div class="row" id="otziv">
     <div class="col user-select-none text-start">
          <br><p class="text-primary">Михаил Петров</p>
          Хочу рассказать свою историю и выразить слова благодарности внимательному и грамотному адвокату в нашем регионе. Узнав о том, что у него уже были в практике оправдательные приговоры по убийству, мы решили обратиться к нему со своей бедой. Вячеслав Анатольевич защищал моего сына в суде. И хочется сказать, что справился со всеми судебными трудностями блестяще! Сыну грозило за вменяемое убийство более 10 лет, просто за то, в чём он не виноват. И никто бы не поверил его словам, если б ни Вячеслав Анатольевич. Он приводил настолько достоверные факты о невиновности моего сына, что в итоге привело к прекращению уголовного дела. Мы не могли поверить, что этот кошмар окончен и сын на свободе, и только благодаря профессионализму Вячеслава Анатольевича смогли доказать это всем. В наше время люди готовы верить всему подряд, их даже не интересует, что ложь может сломать судьбу человека. Но Вячеслав Анатольевич совсем не такой человек, он переживает и проникается душой к каждому своему клиенту. А это очень тяжело. Он и поддержит, и успокоит, и будет отстаивать права человека в рамках закона до последнего. Я очень благодарна ему! Он помогла всей нашей семье и показал, что правду нужно доказывать, сколько бы это не стоило усилий!
         <p class="text-black-50">15 мая в 11:22 </p>
     </div>
 </div>
-<div class="row">
+<div class="row" id="otziv">
    <div class="col user-select-none text-start">
         <p class="text-primary">Павел Ершов</p>
         Я попал в ДТП, со мной случился просто кошмар, трагедия, 2 трупа на моей совести, возбудили уголовное дело. По рекомендации обратился к адвокату Ермолаеву В.А.., настолько грамотный профессионал своего дела, психолог скажем так, смог даже потерпевших по делу расположить, и вырулил ситуацию, наказание получил минимальное, спасибо Вам!!!
         <p class="text-black-50">29 мар в 12:58 </p>
     </div>
 </div>
-<div class="row">
+<div class="row" id="otziv">
     <div class="col user-select-none text-start">
         <p class="text-primary">Лариса Клинина</p>
         Благодаря содействию адвоката Ермолаева выиграла суд (расторжение договора купли-продажи, взыскание денег по защите прав потребителей)) хотя не очень-то на это рассчитывала, так как до этого обращалась в юридическую компанию, где мне сказали, что шансов выиграть у меня нет. Рекомендую всем, кто ищет хорошего адвоката!
         <p class="text-black-50">1 мар в 14:30 </p>
     </div>
 </div>
-<div class="row">
+<div class="row" id="otziv">
    <div class="col user-select-none text-start">
         <p class="text-primary">Рита Грунина</p>
         Мне очень помог Вячеслав Анатольевич! Огромная ему благодарность! Я разводилась с мужем, делила имущество, кредиты, долги и недостроенный дом. Было очень сложное дело, но адвокат Ермолаев во всем разобрался и довел дело до конца. Мы выиграли! Я очень ему благодарна. За его внимательность, отзывчивость, старание. Он болеет за каждое дело. Молодец! Спасибо
@@ -305,7 +246,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row" id="otziv">
     <div class="col user-select-none text-start">
         <p class="text-primary">Егор Сурков</p>
         Спасибо за помощь!!!!!! Вячеслав Анатольевич Во-первых, выиграли сложное дело! Во-вторых, в два раза увеличили сумму взыскания! В-третьих, всегда были готовы встретиться и ответить на все вопросы!!!! В-четвертых, очень порадовали цены!!!!!! Спасибо огромное!!!!
@@ -313,51 +254,138 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row" id="otziv">
    <div class="col user-select-none text-start">
         <p class="text-primary">Игорь Жарков</p>
         Хочу сказать слова благодарности, меня хотели обмануть мошенники, сняв деньги через банк и приставов, хотя долгов не было. Сумма была порядка 12 млн.руб. Сумму уже списали, Вячеслав помог в этом сложном деле. Как раз под Новый год .Спасибо Вячеславу. рекомендую!
         <p class="text-black-50">20 нояб 2020 в 12:32 </p>
     </div>
 </div>
+</div>
+</div>
                 
 <!--футер-->
 
-<div class="row">
-    <div class="col col-md-4" id="shapka" >
-        <p class="user-select-none">
-            <p class="fs-5">Адвокат </p>
-            <p class="fs-3">Ермолаев Вячеслав Анатольевич </p>
-            Номер в реестре - 86/793. <br>
-            Номер удостоверения - 828. <br> <br>
-            <a data-testid="linkElement" href="tel:89226530917" class="text-decoration-none text-white"><span class="_1JoT_">
-                <button id="telefon" type="button" class="btn btn-warning btn-lg text-black">
-                    <p class="user-select-none fs-1 "> 
-                        + 7(922)653-09-17</p>
-                </button>
-            </span></a>
-            <br><br>
-        </p>
-        <div class="ratio ratio-4x3">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7674.702538541227!2d73.39852293284117!3d61.25625959110463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43739766b8eaf48f%3A0x511c5b145ff924c9!2z0YPQuy4g0JzQsNGP0LrQvtCy0YHQutC-0LPQviwgMzEsINCh0YPRgNCz0YPRgiwg0KXQsNC90YLRiy3QnNCw0L3RgdC40LnRgdC60LjQuSDQsNCy0YLQvtC90L7QvNC90YvQuSDQvtC60YDRg9CzLCA2Mjg0MDM!5e0!3m2!1sru!2sru!4v1623740412137!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<div class="row" id="background3">
+    <div class="col-12 text-center"  >
+        <p class="user-select-none ">
+          <p class="user-select-none text-uppercase text-center">  Адвокат <br/> 
+              <span style="font-size:1.8em; color: white;"> Ермолаев Вячеслав Анатольевич  </span>           
+          </p>
+          Сургутская специализированная коллегия адвокатов ХМАО-Югра, г. Сургут, ул. Маяковского, д. 31, оф. 909. <br>
+            Номер в реестре - 86/793. Номер удостоверения - 828. <br> <br>     
     </div>
+    <div class="col-md-8 mt-4 px-5 mx-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+      </svg>
+        <p class="user-select-none text-center fs-5 mt-3"></p>
+          Опишите свою проблему и оставьте свои данные, <br/> чтобы мы могли связаться с вами! </p>
 
-    Сургутская специализированная коллегия адвокатов <br>
-    ХМАО-Югра, г. Сургут, ул. Маяковского, д. 31, оф. 909. <br>
+      
 
-    </div>
-    <div class="col-12 col-md-8" id="shapka">
-        <div class="ratio" style="--bs-aspect-ratio: 93%;">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftu_lP4CJJPGlXGkSoo3LkxP7v7LKq9C2dWR9x8W7UToGoag/viewform?embedded=true" width="300vw" height="900vw" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-    </div>
+      <form class="row g-3 mt-4 text-center d-flex justify-content-center">
+
+        <div class="col-md-10">
+          <textarea class="form-control" id="validationTextarea" rows="7" placeholder="Опишите свою проблему" required></textarea>
+          
+        </div>
+
+        <div class="col-md-5">
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Имя" required>
+        </div>
+        <div class="col-md-5">
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Фамилия" required>
+        </div>
+        <div class="col-md-5">
+          <input type="text" class="form-control" id="validationDefault03" placeholder="+7(ххх)ххх-хх-хх" required>
+        </div>
+        <div class="col-md-5">
+          <input type="text" class="form-control" id="validationDefault03" placeholder="name@example.com" >
+        </div>
+
+        <div class="col-md-10">
+          <input type="file" class="form-control" aria-label="file example">
+        </div>
+
+        <div class="col-12 d-flex justify-content-center">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+            <label class="form-check-label" for="invalidCheck2">
+              <a href="privacy_policy.pdf" data-testid="linkElement" class="text-decoration-none text-white"> Согласен на обработку персональных данных </a>
+            </label>
+          </div>
+        </div>
+        <div class="col-12 mb-5">
+          <button id="btn" class="btn btn-lg" type="submit" >Отправить </button>
+
+        </div>
+      </form>
+      </div>
+        </div>
 </div>
 </div>
+<!--TRASH-->
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Верхнее всплывающее окно">
+  Всплывающее окно вверху
+</button>
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Правое всплывающее окно">
+  Всплывающее окно справа
+</button>
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Нижнее всплывающее окно">
+  Всплывающее окно внизу
+</button>
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Левое всплывающее окно">
+  Всплывающее окно слева
+</button>
+<button type="button" class="btn btn-primary" id="liveToastBtn">Показать лайв тосты</button>
 
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 мин назад</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+    </div>
+    <div class="toast-body">
+      Привет, мир! Это тост-сообщение.
+    </div>
+  </div>
+</div>
 
+<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Ссылка с помощью атрибута href
+</a>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  Кнопка с атрибутом data-bs-target
+</button>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Вне холста</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Какой-то текст в качестве заполнителя. В реальной жизни у вас могут быть элементы, которые Вы выбрали. Нравится, текст, изображения, списки и т. д.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        Кнопка раскрывающегося списка
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Действие</a></li>
+        <li><a class="dropdown-item" href="#">Другое действие</a></li>
+        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 <!--TRASH-->
 
 </div>
 
-    <script src="js\bootstrap.bundle.min.js"></script>    
+<script src="js\bootstrap.bundle.min.js"></script>   
 </body>
 </html>
