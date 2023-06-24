@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Адвокаты и юристы Сургута: Ермолаев В.А. </title>
     <meta name="description" content="Нарушают права? Звоните! Адвокат Ермолаев В.А. - член сургутской коллегии адвокатов. Работаю с 2008 г. Помогу защиить ваши права. Честные цены. В срок по договору. Защита в суде." >
     <!--для красивой ссылки-->
@@ -13,7 +14,7 @@
     <meta property="og:image" content="/pic/promo.webp">
     <meta property="og:image:width" content="1080">
     <meta property="og:image:height" content="561">
-    <meta property="og:url" content="http://advokat86ermolaev.ru/">
+    <meta property="og:url" content=" https://pavangelika.github.io/Advokat-Ermolaev/">
     <meta property="og:site_name" content="Адвокат Сургута">
     <meta property="og:type" content="website">
     <!--для поисковиков-->
@@ -37,7 +38,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+  ym(82823992, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/82823992" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TS5NR8G87W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TS5NR8G87W');
+</script>
 </head>
 <body>
     <div class="container-fluid">
@@ -218,28 +242,54 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                   </div>
                   <div class="modal-body">
-                    <form>
+                    <form id="main">
                       <div class="mb-3">                        
-                        <input type="text" class="form-control" id="validationDefault02" placeholder="Имя:" required>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Имя:" required pattern="[А-Яа-я]{3,20}">
+                        <div class="invalid-feedback">
+                          Введите имя на русском языке.
+                        </div>
                       </div>
                       <div class="mb-3">                        
-                        <input type="text" class="form-control" id="validationDefault02" placeholder="Фамилия:" required>
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Фамилия:" required pattern="[А-Яа-я]{4,20}">
+                        <div class="invalid-feedback">
+                          Введите фамилию на русском языке.
+                        </div>
                       </div>
                       <div class="mb-3">                        
-                        <input type="text" class="form-control" id="validationDefault02" placeholder="name@example.ru" required>
+                        <input type="email" class="form-control" id="validationDefault04" placeholder="name@example.com" required>
+                      <div class="invalid-feedback">
+                        Введите корректный e-mail.
                       </div>
+                    </div>
                       <div class="mb-3">                        
-                        <input type="text" class="form-control" id="validationDefault02" placeholder="+7(xxx)xxx-xx-xx" required>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="+7(xxx)xxx-xx-xx" required pattern="[78][0-9]{10}" minlength="11" maxlength="11"> 
+                        <div class="invalid-feedback">
+                          Длина номера 11 цифр.
+                        </div>
                       </div>
                       <div class="mb-3">
-                        <textarea class="form-control" id="validationTextarea" placeholder="Сообщение" required></textarea>
+                        <textarea class="form-control" id="validationTextarea" placeholder="Сообщение" required minlength="50" ></textarea>
+                        <div class="invalid-feedback">
+                          Минимальная длина сообщения от 50 знаков.
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                          <label class="form-check-label" for="invalidCheck2">
+                            <a href="privacy_policy.pdf" data-testid="linkElement" class="text-decoration-none text-black"> Согласен на обработку персональных данных </a>
+                          </label>
+                        </div>
                       </div>
                     </form>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
                     <button class="btn btn-primary" type="submit">Отправить </button>
+                    <div id="success">
 
+                    </div>
+ 
                   </div>
                 </div>
               </div>
@@ -317,28 +367,38 @@
 
       
 
-      <form class="row g-3 mt-4 text-center d-flex justify-content-center">
+      <form id="myform" class="row g-3 mt-4 text-center d-flex justify-content-center needs-validation" novalidate>
 
         <div class="col-md-10">
-          <textarea class="form-control" id="validationTextarea" rows="7" placeholder="Опишите свою проблему" required></textarea>
-          
+          <textarea type="text" name="comment" class="form-control" id="validationTextarea" rows="7" placeholder="Опишите свою проблему" required minlength="50" ></textarea>
+          <div class="invalid-feedback text-white">
+            Минимальная длина сообщения от 50 знаков.
+          </div>
         </div>
 
         <div class="col-md-5">
-          <input type="text" class="form-control" id="validationDefault01" placeholder="Имя" required>
+          <input type="text" name="name" class="form-control" id="validationCustom01" placeholder="Имя" required pattern="[А-Яа-я]{3,20}">
+          <div class="invalid-feedback text-white">
+            Введите имя на русском языке.
+          </div>
+        </div>
+        <div class="col-md-5 text-white">
+          <input type="text" name="surname" class="form-control" id="validationDefault02" placeholder="Фамилия" required pattern="[А-Яа-я]{4,20}">
+          <div class="invalid-feedback text-white">
+            Введите фамилию на русском языке.
+          </div>
         </div>
         <div class="col-md-5">
-          <input type="text" class="form-control" id="validationDefault02" placeholder="Фамилия" required>
+          <input type="text" name="tel" class="form-control" id="validationDefault03" placeholder="+7хххххххххх" required pattern="+[78][0-9]{10}" minlength="11" maxlength="12"> 
+          <div class="invalid-feedback text-white">
+            Длина номера 11 цифр.
+          </div>
         </div>
         <div class="col-md-5">
-          <input type="text" class="form-control" id="validationDefault03" placeholder="+7(ххх)ххх-хх-хх" required>
-        </div>
-        <div class="col-md-5">
-          <input type="text" class="form-control" id="validationDefault03" placeholder="name@example.com" >
-        </div>
-
-        <div class="col-md-10">
-          <input type="file" class="form-control" aria-label="file example">
+          <input type="email" name="email" class="form-control" id="validationDefault04" placeholder="name@example.com" required>
+          <div class="invalid-feedback text-white">
+            Введите корректный e-mail.
+          </div>
         </div>
 
         <div class="col-12 d-flex justify-content-center">
@@ -347,10 +407,16 @@
             <label class="form-check-label" for="invalidCheck2">
               <a href="privacy_policy.pdf" data-testid="linkElement" class="text-decoration-none text-white"> Согласен на обработку персональных данных </a>
             </label>
+            <div class="invalid-feedback text-white">
+              Необходимо ваше согласие
+            </div>
           </div>
         </div>
-        <div class="col-12 mb-5">
+        <div class="col-12 mb-3">
           <button id="btn" class="btn btn-lg" type="submit">Отправить </button>
+          <div id="success">
+
+          </div>
 
         </div>
       </form>
@@ -365,7 +431,11 @@
 
 </div>
 
+
+
 <script src="js/bootstrap.bundle.min.js"> </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/validation.js"></script>
 
 </body>
 </html>
